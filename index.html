@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Погода</title>
+</head>
+
+<body>
+    <header class="header"> 
+        <h1 class="title">Узнать погоду в городе</h1>
+        
+    </header>
+
+    <div class="wrapper">
+
+        <div class="input__form">
+            <form onsubmit="return false" class="input__formClass">
+                <input type="text" placeholder="введите город" class="input__class">
+            </form>
+        </div>
+
+        <div class="main">
+            <div class="tabs">
+
+                <div class="tabs__body">
+                    <div id="tab_01" class="tabs__block">
+                        <div class="tab__now">
+                            <div class="weather__temp"></div>
+                            <img alt="" class="weather__img">
+                            <div class="city__panel">
+                                <p class="city__title"></p>
+                                <button class="city__save">
+                                    <img src="/img/Shape.svg" alt="" class="city__saveIMG">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab_02" class="tabs__block">
+                        <p class="city__title details" id="cityTitle"></p>
+                        <div class="city__stat">
+                            <p id="temp">Температура: </p>
+                            <p id="feelsLike">Ощущается: </p>
+                            <p id="weather">Погода: </p>
+                            <p id="sunrise">Восход: </p>
+                            <p id="sunset">Закат: </p>
+                        </div>
+                    </div>
+
+                    <div id="tab_03" class="tabs__block">
+                        <p class="city__title details" id="cityTitle"></p>
+                        <div class="forecast__all">
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+                <nav class="tabs__items">
+                    <a href="#tab_01" class="tabs__item">Сейчас</a>
+                    <a href="#tab_02" class="tabs__item">Детали</a>
+                    <a href="#tab_03" class="tabs__item">Прогноз</a>
+                </nav>
+
+            </div>
+
+            <div class="addedLoc">
+                <div class="addedLoc__title">добавленные места: </div>
+                <div class="addedLoc__list">
+                    <div class="addedLoc__list-item">
+                        
+                        <button class="deleteButton">&#10006;</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
