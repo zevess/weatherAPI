@@ -25,6 +25,7 @@ export async function forecast(cityName) {
 
 }
 
+
 function createForecast(forecastCommits) {
     const forecastAllBlock = document.querySelector('.forecast__all');
 
