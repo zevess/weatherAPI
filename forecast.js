@@ -16,7 +16,7 @@ export async function forecast(cityName) {
         for (let k = 0; k < (forecastCommits.list).length; k++) {
             while (k < 20) {
                 k++;
-                console.log(forecastCommits.list[k].weather[0].main)
+                // console.log(forecastCommits.list[k].weather[0].main)
                 createForecast(forecastCommits.list[k]);
             } break;
 

@@ -1,0 +1,19 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "weather application with api",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zevess/weatherAPI.git"
+  },
+  "author": "Vladislav Gazetdinov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zevess/weatherAPI/issues"
+  },
+  "homepage": "https://github.com/zevess/weatherAPI#readme"
+}

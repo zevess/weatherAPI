@@ -13,12 +13,12 @@ export async function weatherNow(cityName) {
     const serverUrl = 'http://api.openweathermap.org/data/2.5/weather';
     const apiKey = '4e252dbc9f8bb90c7847aaa53fb2e11b';
     const url = `${serverUrl}?q=${cityName}&appid=${apiKey}`;
-    console.log(url);
+    // console.log(url);
 
     let responce = await fetch(url);
     if (responce.ok) {
         let commits = await responce.json();
-        console.log(commits);
+        // console.log(commits);
 
         Array.from(ELEMENTS.CITY_TITLE_ALL).forEach(element => {
             element.textContent = cityName;
@@ -62,7 +62,7 @@ function setDetails(commits) {
     const weatherIcon = commits.weather[0].icon;
     const weatherIconURL = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`;
     weatherIMG.src = weatherIconURL;
-    console.log(weatherIconURL);
+    // console.log(weatherIconURL);
 }
 
 
