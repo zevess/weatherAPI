@@ -16,3 +16,20 @@ export const ELEMENTS = {
 
 }
 
+export const weatherTitles = {
+    "Clouds": "Облачно", 
+    "Thunderstorm": "Гроза", 
+    "Drizzle": "Морось",
+    "Rain": "Дождь",
+    "Mist": "Туман", 
+    "Snow": "Снег",
+    "Smoke": "Смог", 
+    "Haze": "Мгла",
+    "Dust": "Пыль",
+    "Fog": "Густой туман",
+    "Sand": "Песчанная буря",
+    "Ash": "Вулканический пепел",
+    "Squall": "Шквал",
+    "Tornado": "Торнадо",
+    "Clear": "Ясно"
+}
